@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about us</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <style>
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #333;
+}
+
+
+.hero {
+  background: url('bread-banner.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fdf1d3;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+}
+
+.contact-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.contact-box {
+  background-color: #fdf1d3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+}
+/* Form & Map */
+.form-map-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  margin-bottom: 10px;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background-color: #d17828;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
+}
+  </style>
+</head>
+<body>
+   <header class="header">
+     <nav>
+                <a href="index.html"><img src="images/images.png"></a>
+                <div class="nav-links" id="navLinks"> 
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about us.html">about us</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="review.html">review</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+  </header>
+   <section class="hero">
+    <h1>Contact Us</h1>
+    <p>Let us make your special moments unforgettable. Whether it’s a wedding, birthday, or corporate event, Artee Catering is here to serve you with excellence. Reach out today to learn more about our services or to request a custom quote.
+
+Get In Touch
+Have a question, need a menu, or want to book our catering team? Fill out the form below and we’ll get back to you shortly. We’re always happy to help make your event stress-free and delicious.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-boxes">
+      <div class="contact-box"><h3>📞 Phone/Whatsapp</h3><p>5904 2538</p></div>
+      <div class="contact-box"><h3>📧 Email</h3><p>arteeseerttun0411@gmail.com</p></div>
+      <div class="contact-box"><h3>🏪 location</h3><p>Road Abattoir La Caverne, Vacoas</p></div>
+    </div>
+
+    <div class="form-map-wrapper">
+      <div class="contact-form">
+  <h2>Send Message to WhatsApp</h2>
+  <input type="text" placeholder="Name"  required />
+  <input type="email" placeholder="Email" required />
+  <input type="text" id="messageInput" placeholder="sendToWhatsApp" required />
+  <textarea placeholder="Message" rows="5" required></textarea>
+   <input type="text" id="messageInput" placeholder="Subject" required />
+  <br><br>
+  <button onclick="sendToWhatsApp()">Send via WhatsApp</button>
+<p>Contact us via WhatsApp: <a href="https://wa.me/23059042538" style="color: #fff; text-decoration: underline;">59042538</a></p>
+        </form>
+      </div>
+      <div class="map">
+        <iframe
+           src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3741.838567375165!2d57.47209017523709!3d-20.30694808116792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE4JzI1LjAiUyA1N8KwMjgnMjguOCJF!5e0!3m2!1sen!2smu!4v1754498851324!5m2!1sen!2smu"   
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+  <script>
+    function sendToWhatsApp() {
+      const phoneNumber = '23059042538'; // Replace with your full phone number, e.g., country code + number
+      const message = document.getElementById("messageInput").value;
+
+      if (message.trim() === "") {
+        alert("Please enter a message.");
+        return;
+      }
+      const encodedMessage = encodeURIComponent(message);
+      const url = `https://wa.me/23059042538?text=${sendToWhatsApp}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about us</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+    }
+
+    .about-us {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .about-us h2 {
+      font-size: 36px;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .about-us p.special {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 40px;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .about-box {
+      background-color: #1a1a1a;
+      padding: 20px;
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .about-box img {
+      width: 100%;
+      height: 730px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .about-text h3 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+    }
+
+    .about-text p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #f4a300;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background-color: #e59200;
+    }
+    .team-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .team-member {
+      text-align: center;
+      width: 180px;
+    }
+
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ddd;
+    }
+
+    .team-member h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #955f03;
+    }
+
+    .team-member p {
+      font-size: 14px;
+      color: #888;
+    }
+    .story {
+      color: #b20d1dd7;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      font-size: 15px;
+      line-height:2.5;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+     <section class="headers">
+            <nav>
+                <a href="index.html"><img src="images/images.png"></a>
+                <div class="nav-links" id="navLinks"> 
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about us.html">about us</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="review.html">review</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+  <section class="about-us">
+    <p class="special">Special Moments</p>
+    <h2>ABOUT US</h2>
+
+    <div class="about-container">
+      <!-- Left Image -->
+      <div class="about-box">
+        <img src="images/aboutf.jpg" alt="Traditional Dish">
+      </div>
+
+      <!-- Center Text -->
+      <div class="about-box about-text">
+        <p class="special">Taste Perception</p>
+            <p class="story">
+Welcome to Artee Catering, where great food meets heartfelt service.
+We are a Mauritius-based catering service dedicated to offering high-quality, freshly prepared meals for all types of events — from intimate family gatherings to large-scale celebrations. Whether it’s a wedding, birthday, corporate function, or any special occasion, we take pride in delivering a memorable culinary experience tailored to your needs.
+At AS Catering, we focus on authentic flavors, reliable service, and attention to detail. Our team is passionate about creating menus that reflect your preferences while ensuring timely delivery, beautiful presentation, and full customer satisfaction.
+Thank you for choosing AS Catering — where every event becomes extra special with our touch of taste and care.
+      </div>
+
+      <!-- Right Image -->
+      <div class="about-box">
+        <img src="images/aboutt.jpg" alt="Modern Dish">
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+</body>
+</html>

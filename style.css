@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+img{
+background-image: url(images/images.png);
+background-size: 300px;
+background-repeat: no-repeat;
+display: inline-block;
+height: 100px;
+position: relative;
+text-indent: -9999999px;
+width: 200px;
+top: -10px;
+
+
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+.video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit:cover;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20vh;
+    font-family: sans-serif;
+}
+body, html{
+    margin: 0;
+    height: 100%;
+    overflow:scroll;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li :hover ::after{
+    width: 10;
+}
+.text-box{
+width: 90;
+color: #000000;
+position:static;
+top: 40%;
+left: 30%;
+transform: translate(-50,-50);
+text-align: center;
+}
+.text-box h1{
+    font: size 62px;
+}
+.text-box h2{
+    font-size: 100px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #000000;
+}
+.hero-btn{
+    display: inside;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #orange;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: red;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #040404;
+    background: #161616;
+    transition: 1s;
+}
+nav .fa{
+    display:none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #141313;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*----- course -----*/
+
+.courses{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+margin-top: 250px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.course{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.course-col img{width: 100%;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid white;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0,2)
+}
+@media(max-width: 700px){
+.course{
+    flex-direction: column;
+}
+
+}
+/*------- campus ----*/
+.campus{
+    width: 80;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{width: 80;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+p{  width: 80;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.icons{width: 80;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 30%;
+    display: block;
+}
+ .layer{
+    background: transparent;
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+ }
+ .layer:hover{
+    background: red;
+    width: 441.5px;
+ }
+ .layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #f7f7f7;
+    font-size: 26px;
+    bottom: 0;
+    left: 15%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+html{scroll-behavior: smooth;
+}
+.campuss{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.campuss-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.campuss-col img{width: 100%;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid white;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.campuss-col:hover{
+@media(max-width: 700px)
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0,2)
+}
+@media(max-width: 700px){
+.campuss{
+    flex-direction: column;
+}
+}
+/*----- cour -----*/
+
+.cours{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+margin-top: 250px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.cour{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cour-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.cour-col img{width: 100%;
+    border-radius: 50%;
+    box-shadow: gray 0 0 10px;
+    border: 1px solid white;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.cour-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0,2)
+}
+@media(max-width: 700px){
+.cour{
+    flex-direction: column;
+}
+
+}
+.class{
+    justify-items: center;
+}
+.s

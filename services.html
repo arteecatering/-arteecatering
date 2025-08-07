@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AS Catering</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121619;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-section {
+      flex: 1;
+      max-width: 500px;
+      padding: 10px;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .menu-section {
+      flex: 1;
+      max-width: 500px;
+      padding: 10px;
+    }
+
+    .menu-section p.subtitle {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 5px;
+    }
+
+    .menu-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #444;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+
+    .item-name {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .item-price {
+      color: #f4a259;
+      font-weight: bold;
+    }
+
+    .explore {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #fff;
+      opacity: 0.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f4a259;
+      color: #000;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .menu-section h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item-price {
+        align-self: flex-end;
+      }
+
+      .explore {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .menu-item {
+        font-size: 0.9rem;
+      }
+
+      .menu-section h2 {
+        font-size: 1.2rem;
+      }
+
+      .button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+    }
+      .raw {
+            display: flex;
+            align-items: center;
+        }
+        .text {
+            flex: 1;
+            margin-right: 1px;
+            text-align: center;
+        }
+        .video {
+            flex: 1;
+        }
+        .video {
+            width: 100%;
+            max-width: 900px; /* Adjust the max width as needed */
+            height: auto;
+        }
+  </style>
+</head>
+<body>
+     <section class="headers">
+            <nav>
+                <a href="index.html"><img src="images/images.png"></a>
+                <div class="nav-links" id="navLinks"> 
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about us.html">about us</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="review.html">review</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+  <div class="container">
+    <div class="image-section">
+      <img src="images/IMG-20250806-WA0040.jpg" alt="Food Dish">
+    </div>
+    <div class="menu-section">
+      <p class="subtitle">our healthy food</p>
+      <h2>OUR SPECIAL SERVICES</h2>
+
+     <li>Catering for All Occasions</li>
+    <p>
+•	We cater for family gatherings, birthdays,religious events, and corporate functions. 
+ Our menu can be tailored to fit your needs and preferences.
+</p>
+    <li>Home-Style Cooking</li>
+    <p>We prepare authentic Mauritian, Indian, and Tamil dishes using fresh ingredients and traditional recipes. Custom orders are always welcome.
+</p>
+<li>Event Catering Packages</li>
+<p>Choose from flexible food packages designed to suit your guest count and event type. We offer everything from snacks to full meals and desserts.</p>
+   <li>On-Site Food Service</li>   
+   <p>We provide professional waiters to assist during your event. You can request as many as needed based on your event size and food quantity.</p>
+   <li>Delivery Service</li>
+   <p>If you don’t have transport, we can deliver your order to your location for an additional fee.</p>
+   <li>Order via WhatsApp</li>
+   <p>•	Place your order by messaging us on WhatsApp at 5904 2538. We will communicate with you directly to finalize your menu and details.
+</p>
+</div>
+ <div class="raw">
+        <div class="text">
+            <h2>Discover</h2>
+            <p>Experience the elegance and professionalism of Artee Catering through this short video captured at a beautiful wedding hosted at Domaine Anna. Our dedicated team delivered exceptional waiter service, contributing to a seamless and memorable celebration. Let us bring the same excellence to your next event.        </div>
+        <div class="video">
+              <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+  </div>
+  <!------JavaScript for Toggle menu------->
+<script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+
+        </script>
+
+
+
+</body>
+</html>

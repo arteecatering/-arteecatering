@@ -1,0 +1,236 @@
+
+               <!DOCTYPE html>
+<html lang="en">
+<head>  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>catering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+   body {
+      margin: 0;
+      background-color: #000000;
+      font-family: 'Arial', sans-serif;
+      
+
+    }
+    .section {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .section h2 {
+      background: #5cb85c;
+      color: white;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+     
+    }
+    .menu-grid1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 20px;
+    }
+    
+    .menu-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+.menu-items {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);}
+ .menu-items img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;}
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .menu-info {
+      padding: 15px;
+    }
+    .menu-info h4 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .menu-info p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+    }
+    .price {
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+     
+     .raw {
+            display: flex;
+            align-items: center;
+        }
+        .text {
+            flex: 1;
+            margin-right: 1px;
+            text-align: left;
+        }
+        .text h2{
+            color: #fbfafa;
+             flex: 1;
+            margin-right: 1px;
+            text-align: left;
+        }
+        .text p{
+            text-align: left;
+        }
+         video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;}
+       
+     
+  </style>
+</head>
+<body>  <section class="headers">
+            <nav>
+                <a href="index.html"><img src="images/images.png"></a>
+                <div class="nav-links" id="navLinks"> 
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about us.html">about us</a></li>
+                        <li><a href="services.html">services</a></li>
+                        <li><a href="menu.html">menu</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="review.html">review</a></li>
+                        
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            
+            
+    
+
+  <div class="section">
+    <h2>snacks</h2>
+    <h3>vegetarian</h3>
+    <div class="menu-grid">
+       <div class="menu-item"><img src="images/veg snack/samoussa.jpg"><div class="menu-info"><h4>Samoussas</h4><p>Crispy pastry filled with a tasty mix of cheese and maize or cheese and potato.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/veg snack/ro.jpg"><div class="menu-info"><h4>Spring Rolls</h4><p>Light and crunchy rolls packed with cheese and vegetables.</p><div class="price"></div></div></div>
+     <div class="menu-item"><img src="images/veg snack/1.jpg"><div class="menu-info"><h4>Halfmoon</h4><p>Flaky crescent-shaped pastries filled with a cheese and potato blend.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/veg snack/2.jpg"><div class="menu-info"><h4>Croquette</h4><p>Golden fried snacks made with creamy cheese and mashed potato.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/veg snack/3.jpg"><div class="menu-info"><h4>Hakien</h4><p>Delicious fried dumplings stuffed with cheese and corn.</p><div class="price"></div></div></div>
+      <h3>non-vegetarian</h3>
+       <div class="menu-item"><img src="images/non veg snack/1.jpg"><div class="menu-info"><h4>Chicken Lollipop</h4><p>Crispy fried chicken wings with a tangy sauce.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/non veg snack/2.jpg"><div class="menu-info"><h4>Crevette Vermicelle</h4><p>Shrimp wrapped in vermicelli noodles and fried until crispy.</p><div class="price"></div></div></div>
+ <div class="menu-item"><img src="images/non veg snack/3.jpg"><div class="menu-info"><h4>Pane Poisson</h4><p>Breaded and fried fish fillets with a crunchy coating.</p><div class="price"></div></div></div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Main Course</h2>
+    <br>
+    
+    
+    <h4>Indian food</h4>
+
+    <div class="menu-grid1">
+      <div class="menu-items"><img src="images/indian food/IMG-20250730-WA0031.jpg"><div class="menu-info"><h4>7 Curry Tamil (7 Cari Tamil)</h4><p>Traditional Tamil-style seven curries, each bursting with authentic flavor.</p><div class="price"></div></div></div>
+      <div class="menu-items"><img src="images/indian food/IMG-20250730-WA0030.jpg"><div class="menu-info"><h4>7 Curry Indian (7 Cari Indian)</h4><p>A selection of seven classic Indian curries prepared with rich spices and fresh ingredients.</p><div class="price"></div></div></div>
+    
+    </div>
+      <br>
+   
+<h4>fusion foods</h4>
+<div class="menu-grid">
+    <div class="menu-item"><img src="images/fusion food/chicken Manchurian.jpg"><div class="menu-info"><h4>chicken Manchurian</h4><p></p><div class="price"></div></div></div>
+    <div class="menu-item"><img src="images/fusion food/2.jpg"><div class="menu-info"><h4>Noodles</h4><p>(stir-fried, Hakka style)</p><div class="price"></div></div></div>
+    <div class="menu-item"><img src="images/fusion food/3.jpg"><div class="menu-info"><h4>Vegetable Chow Mein</h4><p></p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/fusion food/paneer butter masala.jpg"><div class="menu-info"><h4>paneer butter masala</h4><p>(fusion touch)</p><div class="price"></div></div></div>
+      <br>
+</div>
+<br>
+       <h4>mauritian Classics</h4>
+       <div class="menu-grid">
+      <div class="menu-item"><img src="images/mauritian classics/cari masala.jpg"><div class="menu-info"><h4>cari masala</h4><p>(spicy, aromatic) </p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/mauritian classics/2.jpg"><div class="menu-info"><h4>Poulet Sauté</h4><p>•	(Sautéed chicken with herbs and spices)
+</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/mauritian classics/3.jpg"><div class="menu-info"><h4>Poisson Aigre-Doux </h4><p>(Sweet and sour fish)</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/mauritian classics/la daube.jpg"><div class="menu-info"><h4>la daube</h4><p>(slow-cooked, rich sauce)</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/mauritian classics/riz cantonais.jpg"><div class="menu-info"><h4>riz cantonais</h4><p>(Mauritian-style Cantonese fried rice)</p><div class="price"></div></div></div>
+      
+    </div>
+     
+  </div>
+
+  <div class="section">
+    <h2>dessert</h2>
+    <div class="menu-grid">
+      <div class="menu-item"><img src="images/dessert/1.jpg"><div class="menu-info"><h4>Ice Creams</h4><p>Assorted flavors made to refresh and delight your palate.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/2.jpg"><div class="menu-info"><h4>Panna Cotta</h4><p>A silky smooth Italian dessert, served chilled with a fruity sauce.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/3.jpg"><div class="menu-info"><h4>Crème Brûlée</h4><p>Rich custard topped with a perfectly caramelized sugar crust.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/4.jpg"><div class="menu-info"><h4>Chocolate Mousse</h4><p>Light, fluffy, and intensely chocolatey—a true classic.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/5.jpg"><div class="menu-info"><h4>Tiramisu</h4><p>Layered coffee-flavored dessert with creamy mascarpone and cocoa.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/6.jpg"><div class="menu-info"><h4>Cheesecake</h4><p>Creamy and smooth, available plain or topped with fresh fruit.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/7.jpg"><div class="menu-info"><h4>Fruit Tart</h4><p>A crisp pastry shell filled with custard and topped with fresh fruits.</p><div class="price"></div></div></div>
+      <div class="menu-item"><img src="images/dessert/8.jpg"><div class="menu-info"><h4>Baklava</h4><p>Crisp layers of pastry with nuts, sweetened with honey syrup.</p><div class="price"></div></div></div>
+
+    </div>
+  </div>
+    </div>
+  </div>
+     <div class="raw">
+        <div class="text">
+            <h2>Our Signature Dishes</h2>
+            <p>A quick look at the delicious variety Artee Catering brings to every event — fresh, flavorful, and beautifully presented. </div>
+        <div class="video">
+                <video width="640" height="660" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+  </div>
+
+<!------JavaScript for Toggle menu------->
+<script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+            
+
+        </script>
+
+
+    </body>
+</html>
